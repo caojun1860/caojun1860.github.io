@@ -29,25 +29,74 @@ try {
 <td id="layout-menu">
 <div class="menu-category"> </div>
 <div class="menu-item"><a href="index.html" class="current">个人主页</a></div>
-<div class="menu-item"><a href="publications.html">Publications</a></div>
-<div class="menu-item"><a href="http://www.lxy.zjut.edu.cn/index.php/Index/file_experts2?mid=19&pid=3">个人简历</a></div>
-<div class="menu-item"><a href="course.html">相关课程</a></div>
 </td>
 <td id="layout-content">
 <div id="toptitle">
 <h1>调和分析</h1>
 </div>
  
-<h2>2020-2021第一学年</h2>
-<p><a href="https://baike.baidu.com/item/%E6%9D%AD%E5%B7%9E/147639" target=&ldquo;blank&rdquo;>教学大纲</a><br /> 
-<p><a href="https://baike.baidu.com/item/%E6%9D%AD%E5%B7%9E/147639" target=&ldquo;blank&rdquo;>讲义</a><br /> 
+ <header><h2>Harmonic Analysis </h2><button type="button" class="ghost toc-trigger-mobile" aria-controls="toc-entries" aria-expanded="false">大纲</button></header><ul id="toc-entries"><li><a href="#attributes">属性</a></li><li><a href="#示例">示例</a></li><li><a href="#specifications">标准</a></li><li><a href="#browser_compatibility">浏览器兼容性</a></li><li><a href="#see_also">参见</a></li></ul></section></aside><main id="content" class="main-content" role="main"><article class="article"><div><p id="Summary"></p>
 
+<p><strong>HTML内容模板（<code>&lt;template&gt;</code>）元素</strong>是一种用于保存客户端内容机制，该内容在加载页面时不会呈现，但随后可以(原文为 may be)在运行时使用JavaScript实例化。</p>
+
+<p>将模板视为一个可存储在文档中以便后续使用的内容片段。虽然解析器在加载页面时确实会处理<strong><code>&lt;template&gt;</code></strong>元素的内容，但这样做只是为了确保这些内容有效；但元素内容不会被渲染。</p>
+
+<table class="properties">
+ <tbody>
+  <tr>
+   <th scope="row"><a href="/en-US/docs/Web/HTML/Content_categories">Content categories</a></th>
+   <td><a href="/en-US/docs/Web/HTML/Content_categories#Metadata_content">Metadata content</a>, <a href="/en-US/docs/Web/HTML/Content_categories#Flow_content">flow content</a>, <a href="/en-US/docs/Web/Guide/HTML/Content_categories#Phrasing_content">phrasing content</a>, script-supporting element</td>
+  </tr>
+  <tr>
+   <th scope="row">Permitted content</th>
+   <td>No restrictions</td>
+  </tr>
+  <tr>
+   <th scope="row">Tag omission</th>
+   <td>不允许，开始标签和结束标签都不能省略。</td>
+  </tr>
+  <tr>
+   <th scope="row">Permitted parents</th>
+   <td><a href="/zh-CN/docs/Web/HTML/Element/body"><code>&lt;body&gt;</code></a>, <a href="/zh-CN/docs/Web/HTML/Element/frameset"><code>&lt;frameset&gt;</code></a>, <a href="/zh-CN/docs/Web/HTML/Element/head"><code>&lt;head&gt;</code></a>, <a href="/zh-CN/docs/Web/HTML/Element/dl"><code>&lt;dl&gt;</code></a> and <a href="/zh-CN/docs/Web/HTML/Element/colgroup"><code>&lt;colgroup&gt;</code></a> without a <code>span</code> attribute</td>
+  </tr>
+  <tr>
+   <th scope="row">Permitted ARIA roles</th>
+   <td>None</td>
+  </tr>
+  <tr>
+   <th scope="row">DOM interface</th>
+   <td><a href="/zh-CN/docs/Web/API/HTMLTemplateElement"><code>HTMLTemplateElement</code></a></td>
+  </tr>
+ </tbody>
+</table></div><h2 id="attributes"><a href="#attributes" title="Permalink to 属性">属性</a></h2><div><p>此元素仅包含<a href="/en-US/docs/Web/HTML/Global_attributes">全局属性</a>。</p>
+
+<p>但， <a href="/zh-CN/docs/Web/API/HTMLTemplateElement"><code>HTMLTemplateElement</code></a> 有个属性： <a href="/zh-CN/docs/Web/API/HTMLTemplateElement/content"><code>content</code></a> , 这个属性是只读的<a href="/zh-CN/docs/Web/API/DocumentFragment"><code>DocumentFragment</code></a> 包含了模板所表示的DOM树。</p></div><h2 id="示例"><a href="#示例" title="Permalink to 示例">示例</a></h2><div><p>首先我们从示例的HTML部分开始。</p>
+
+ 
+
+<p>首先，我们有一个表，稍后我们将使用JavaScript代码在其中插入内容。然后是模板，它描述了表示单个表行的HTML片段的结构。</p>
+
+<p>既然已经创建了表并定义了模板，我们使用JavaScript将行插入到表中，每一行都是以模板为基础构建的。</p>
+
+ 
+
+
+  
+
+
+
+ 
 <div id="footer">
 <div id="footer-text">
 </div>
 </div>
 </td>
 </tr>
+
 </table>
+
+
+
 </body>
+
 </html>
