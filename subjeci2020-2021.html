@@ -1,4 +1,3 @@
-
 <head>
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -29,134 +28,74 @@ try {
 <td id="layout-menu">
 <div class="menu-category"> </div>
 <div class="menu-item"><a href="index.html" class="current">个人主页</a></div>
-<div class="menu-item"><a href="publications.html">Publications</a></div>
-<div class="menu-item"><a href="http://www.lxy.zjut.edu.cn/index.php/Index/file_experts2?mid=19&pid=3">个人简历</a></div>
-<div class="menu-item"><a href="course.html">相关课程</a></div>
 </td>
 <td id="layout-content">
 <div id="toptitle">
 <h1>专业导论</h1>
 </div>
  
- 
+ <header><h2> Introduction to the math major </h2>
 
-<header><h2>Jump to section</h2><button type="button" class="ghost toc-trigger-mobile" aria-controls="toc-entries" aria-expanded="false">Jump to section</button></header><ul id="toc-entries"><li><a href="#attributes">属性</a></li><li><a href="#示例">示例</a></li><li><a href="#specifications">标准</a></li><li><a href="#browser_compatibility">浏览器兼容性</a></li><li><a href="#see_also">参见</a></li></ul></section></aside><main id="content" class="main-content" role="main"><article class="article"><div><p id="Summary"></p>
+<button type="button" class="ghost toc-trigger-mobile" aria-controls="toc-entries" aria-expanded="false">主要内容</button></header><ul id="toc-entries"><li><a href="#教学计划">教学计划</a></li><li><a href="#讲义">讲义</a></li>
+<li><a href="#参考文献">参考文献</a></li>
+</ul></section></aside><main id="content" class="main-content" role="main"><article class="article"><div><p id="Summary"></p>
 
-<p><strong>HTML内容模板（<code>&lt;template&gt;</code>）元素</strong>是一种用于保存客户端内容机制，该内容在加载页面时不会呈现，但随后可以(原文为 may be)在运行时使用JavaScript实例化。</p>
+<p><strong> 本课程主要介绍数学专业本科生相关课程.</p>
 
-<p>将模板视为一个可存储在文档中以便后续使用的内容片段。虽然解析器在加载页面时确实会处理<strong><code>&lt;template&gt;</code></strong>元素的内容，但这样做只是为了确保这些内容有效；但元素内容不会被渲染。</p>
+
+<h2 id="教学计划"><a href="#教学计划" title="Permalink to 教学计划">教学计划</a></h2>
+
+<div><p> 本课程计划教授如下内容.</a>
+
 
 <table class="properties">
  <tbody>
   <tr>
-   <th scope="row"><a href="/en-US/docs/Web/HTML/Content_categories">Content categories</a></th>
-   <td><a href="/en-US/docs/Web/HTML/Content_categories#Metadata_content">Metadata content</a>, <a href="/en-US/docs/Web/HTML/Content_categories#Flow_content">flow content</a>, <a href="/en-US/docs/Web/Guide/HTML/Content_categories#Phrasing_content">phrasing content</a>, script-supporting element</td>
+   <td scope="row"> 1. 基础数学</a></td>
+   <td> 主讲人曹军 </td>
+   <td> PPT</td>
   </tr>
+	
   <tr>
-   <th scope="row">Permitted content</th>
-   <td>No restrictions</td>
+   <td scope="row"> 2. 金融数学 </a></td>
+   <td> 主讲人朱佳惠 </td>
+   <td>讲义</td>
   </tr>
-  <tr>
-   <th scope="row">Tag omission</th>
-   <td>不允许，开始标签和结束标签都不能省略。</td>
+	
+	 
+<tr>
+   <td scope="row"> 3. 大数据 </a></td>
+   <td> 主讲人冯缘 </td>
+   <td>讲义</td>
   </tr>
+
   <tr>
-   <th scope="row">Permitted parents</th>
-   <td><a href="/zh-CN/docs/Web/HTML/Element/body"><code>&lt;body&gt;</code></a>, <a href="/zh-CN/docs/Web/HTML/Element/frameset"><code>&lt;frameset&gt;</code></a>, <a href="/zh-CN/docs/Web/HTML/Element/head"><code>&lt;head&gt;</code></a>, <a href="/zh-CN/docs/Web/HTML/Element/dl"><code>&lt;dl&gt;</code></a> and <a href="/zh-CN/docs/Web/HTML/Element/colgroup"><code>&lt;colgroup&gt;</code></a> without a <code>span</code> attribute</td>
-  </tr>
-  <tr>
-   <th scope="row">Permitted ARIA roles</th>
-   <td>None</td>
-  </tr>
-  <tr>
-   <th scope="row">DOM interface</th>
-   <td><a href="/zh-CN/docs/Web/API/HTMLTemplateElement"><code>HTMLTemplateElement</code></a></td>
+   <td scope="row"> 4. 数学建模 </a></td>
+   <td> 主讲人周凯 </td>
+   <td>讲义</td>
   </tr>
  </tbody>
-</table></div><h2 id="attributes"><a href="#attributes" title="Permalink to 属性">属性</a></h2><div><p>此元素仅包含<a href="/en-US/docs/Web/HTML/Global_attributes">全局属性</a>。</p>
-
-<p>但， <a href="/zh-CN/docs/Web/API/HTMLTemplateElement"><code>HTMLTemplateElement</code></a> 有个属性： <a href="/zh-CN/docs/Web/API/HTMLTemplateElement/content"><code>content</code></a> , 这个属性是只读的<a href="/zh-CN/docs/Web/API/DocumentFragment"><code>DocumentFragment</code></a> 包含了模板所表示的DOM树。</p></div><h2 id="示例"><a href="#示例" title="Permalink to 示例">示例</a></h2><div><p>首先我们从示例的HTML部分开始。</p>
-
-<pre class="brush: html notranslate"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>producttable<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>thead</span><span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>UPC_Code<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>Product_Name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>thead</span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tbody</span><span class="token punctuation">&gt;</span></span>
-    <span class="token comment">&lt;!-- 现有数据可以可选地包括在这里 --&gt;</span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tbody</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span>
-
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>productrow<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>record<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
-</code></pre>
-
-<p>首先，我们有一个表，稍后我们将使用JavaScript代码在其中插入内容。然后是模板，它描述了表示单个表行的HTML片段的结构。</p>
-
-<p>既然已经创建了表并定义了模板，我们使用JavaScript将行插入到表中，每一行都是以模板为基础构建的。</p>
-
-<pre class="brush:js; notranslate"><code><span class="token comment">// 通过检查来测试浏览器是否支持HTML模板元素</span>
-<span class="token comment">// 用于保存模板元素的内容属性。</span>
-<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token string">'content'</span> <span class="token keyword">in</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'template'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-
-  <span class="token comment">// 使用现有的HTML tbody实例化表和该行与模板</span>
-  <span class="token keyword">let</span> t <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'#productrow'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-  td <span class="token operator">=</span> t<span class="token punctuation">.</span>content<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">"td"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  td<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>textContent <span class="token operator">=</span> <span class="token string">"1235646565"</span><span class="token punctuation">;</span>
-  td<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>textContent <span class="token operator">=</span> <span class="token string">"Stuff"</span><span class="token punctuation">;</span>
-
-  <span class="token comment">// 克隆新行并将其插入表中</span>
-  <span class="token keyword">let</span> tb <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">"tbody"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">let</span> clone <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">importNode</span><span class="token punctuation">(</span>t<span class="token punctuation">.</span>content<span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  tb<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>clone<span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-  <span class="token comment">// 创建一个新行</span>
-  td<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>textContent <span class="token operator">=</span> <span class="token string">"0384928528"</span><span class="token punctuation">;</span>
-  td<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>textContent <span class="token operator">=</span> <span class="token string">"Acme Kidney Beans"</span><span class="token punctuation">;</span>
-
-  <span class="token comment">// 克隆新行并将其插入表中</span>
-  <span class="token keyword">let</span> clone2 <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">importNode</span><span class="token punctuation">(</span>t<span class="token punctuation">.</span>content<span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  tb<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>clone2<span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-  <span class="token comment">// 找到另一种方法来添加行到表，因为不支持HTML模板元素。</span>
-<span class="token punctuation">}</span>
-</code></pre>
-
-<p>结果是原始的HTML表格，通过JavaScript添加了两行新内容：</p>
+</table></div>
 
 
+</p>
 
-<p><iframe class="live-sample-frame sample-code-frame" frameborder="0" height="120" id="frame_示例" src="https://mdn.mozillademos.org/zh-CN/docs/Web/HTML/Element/template$samples/%E7%A4%BA%E4%BE%8B?revision=1572582" width="500" loading="lazy"></iframe></p></div><h2 id="specifications"><a href="#specifications" title="Permalink to 标准">标准</a></h2><div><table class="spectable standard-table">
- <tbody>
-  <tr>
-   <th scope="col">Specification</th>
-   <th scope="col">Status</th>
-   <th scope="col">Comment</th>
-  </tr>
-  <tr>
-   <td><a class="external" href="https://html.spec.whatwg.org/multipage//scripting-1.html#the-template-element" hreflang="en" lang="en">HTML Living Standard<br><small lang="zh-CN">template element</small></a></td>
-   <td><span class="spec-Living">Living Standard</span></td>
-   <td></td>
-  </tr>
-  <tr>
-   <td><a class="external" href="https://www.w3.org/TR/html52//scripting-1.html#the-template-element" hreflang="en" lang="en">HTML5<br><small lang="zh-CN">template element</small></a></td>
-   <td><span class="spec-REC">Recommendation</span></td>
-   <td>Initial definition</td>
-  </tr>
- </tbody>
-</table></div><h2 id="browser_compatibility"><a href="#browser_compatibility" title="Permalink to 浏览器兼容性">浏览器兼容性</a></h2><p>BCD tables only load in the browser</p><div></div><h2 id="see_also"><a href="#see_also" title="Permalink to 参见">参见</a></h2><div><ul>
- <li>Web components: <a href="/zh-CN/docs/Web/HTML/Element/slot"><code>&lt;slot&gt;</code></a> (and historical: <a href="/zh-CN/docs/Web/HTML/Element/shadow"><code>&lt;shadow&gt;</code></a>)</li>
- <li><a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_templates_and_slots">Using templates and slots</a></li>
-</ul>
+
+<h2 id="讲义"><a href="#讲义" title="Permalink to 讲义">讲义</a></h2>
+
+
+<p><a href="links\realanalysis-lecturenotes2020.pdf" target=&ldquo;blank&rdquo;>讲义稿
+
+
+<h2 id="参考文献"><a href="#参考文献" title="Permalink to 参考文献">参考文献</a></h2>
+
 
  
+<ul>
+
+<li> 古今数学思想, 莫里斯 
+
+  
 
 
 
@@ -175,3 +114,5 @@ try {
 </body>
 
 </html>
+
+
